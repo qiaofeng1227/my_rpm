@@ -6,7 +6,7 @@ License: Apache
 Group: Productivity
 Source: https://github.com/qiaofeng1227/my_rpm/blob/master/SOURCES/test.tar.xz
 BuildRoot: %{_tmppath}/%{name}-%{version}-build
-BuildRequires: gcc,make
+BuildRequires: gcc,make,zlib-devel,bzip2-devel
 Requires: build-essential,libssl-dev,zlib1g-dev,libbz2-dev,libreadline-dev,libsqlite3-dev,wget,curl,llvm,libncurses5-dev,libncursesw5-dev,xz-utils,tk-dev,libffi-dev,liblzma-dev
 
 

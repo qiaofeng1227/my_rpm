@@ -6,13 +6,13 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: checkout
         uses: actions/checkout@master
       - name: rpmbuild
         uses: robertdebock/rpmbuild-action@1.0.0
-        
+
       - name: Print output
         run: echo ${{steps.rpm.outputs.source_rpm_path}}
       
