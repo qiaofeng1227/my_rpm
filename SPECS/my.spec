@@ -1,5 +1,5 @@
-Name: my
-Version: 1.0.0
+Name: Python
+Version: 3.8.7
 Release: 0
 Summary: An RPM to see if building works.
 License: Apache
