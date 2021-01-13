@@ -25,6 +25,5 @@ make install
 
 %files
 %defattr(-,root,root,-)
-%{_bindir}/my
 
 %changelog
