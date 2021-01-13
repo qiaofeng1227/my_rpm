@@ -5,7 +5,7 @@ Summary: An RPM to see if building works.
 License: Apache
 Group: Productivity
 URL: https://robertdebock.nl/
-Source: https://github.com/robertdebock/my_rpm/blob/master/SOURCES/my-1.0.0.tar.gz
+Source: https://github.com/qiaofeng1227/my_rpm/blob/master/SOURCES/test.tar.xz
 BuildRoot: %{_tmppath}/%{name}-%{version}-build
 BuildRequires: gcc make
 
