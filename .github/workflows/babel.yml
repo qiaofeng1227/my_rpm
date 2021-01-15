@@ -1,0 +1,26 @@
+---
+name: Build RPM
+
+on:
+  push: 
+    path: [SPEC/babel.spec,SOURCES/Babel-2.9.0.tar.gz]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+      - name: rpmbuild
+        uses: robertdebock/rpmbuild-action@1.0.0
+
+      - name: Print output
+        run: echo ${{steps.rpm.outputs.source_rpm_path}}
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          # Artifact name
+          name: Binary RPM
+          # Directory containing files to upload
+          path: ${{ steps.rpm.outputs.rpm_dir_path }}
