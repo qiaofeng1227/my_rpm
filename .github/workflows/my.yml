@@ -3,7 +3,7 @@ name: Build RPM
 
 on:
   push: 
-    path: SPEC/my.spec
+    path: paths: docs/**
 
 jobs:
   build:

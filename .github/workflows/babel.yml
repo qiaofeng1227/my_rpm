@@ -3,7 +3,7 @@ name: Build RPM-Babel
 
 on:
   push: 
-    path: SPEC/babel.spec
+    path: SPEC/**
 
 jobs:
   build:
