@@ -1,4 +1,4 @@
-Name: babel
+Name: Babel
 Version: 2.9.0
 Release: 0
 Summary: An RPM to see if building works.
