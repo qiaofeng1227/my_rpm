@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@master
       - uses: actions/setup-python@v2
         with:
-          python-version: '3.8' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          python-version: '2.7' # Version range or exact version of a Python version to use, using SemVer's version range syntax
           architecture: 'x64'
       - name: rpmbuild
         uses: robertdebock/rpmbuild-action@1.0.0
