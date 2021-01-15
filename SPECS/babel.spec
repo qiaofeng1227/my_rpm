@@ -15,7 +15,6 @@ Build a mock RPM.
 
 %prep
 %setup -q
-apt install python3
 
 %build
 make
