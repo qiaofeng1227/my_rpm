@@ -3,7 +3,7 @@ name: Build RPM
 
 on:
   push: 
-    path: [SPEC/my.spec,SOURCES/test.tar.xz]
+    path: SPEC/my.spec
 
 jobs:
   build:

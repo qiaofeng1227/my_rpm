@@ -1,9 +1,9 @@
 ---
-name: Build RPM
+name: Build RPM-Babel
 
 on:
   push: 
-    path: [SPEC/babel.spec,SOURCES/Babel-2.9.0.tar.gz]
+    path: SPEC/babel.spec
 
 jobs:
   build:
