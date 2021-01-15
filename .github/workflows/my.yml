@@ -3,7 +3,7 @@ name: Build RPM
 
 on:
   push: 
-    path: paths: docs/**
+    path: docs/**
 
 jobs:
   build:
