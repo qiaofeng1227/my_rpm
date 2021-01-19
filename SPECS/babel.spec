@@ -4,11 +4,11 @@ Release:	1%{?dist}
 Summary:slqite3 is a db	
 
 #Group:		
-License:GPL	
-URL:www.test.com		
-Source0:sqlite-autoconf-3340000.tar.gz	
+License:GPL			
+URL:            https://github.com/qiaofeng1227/%{name}
+Source0:        https://github.com/qiaofeng1227/my_rpm/blob/master/sqlite-autoconf-3340000.tar.gz
 
-#BuildRequires:	
+BuildRequires: gcc make
 #Requires:	
 
 %description
