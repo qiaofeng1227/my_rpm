@@ -1,24 +1,16 @@
----
-name: Build RPM
+name: Docs Build and Upload
 
 on: push
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@master
-      - name: rpmbuild
-        uses: robertdebock/rpmbuild-action@1.0.0
-
-      - name: Print output
-        run: echo ${{steps.rpm.outputs.source_rpm_path}}
-      
-      - name: Upload artifact
-        uses: actions/upload-artifact@v1.0.0
-        with:
-          # Artifact name
-          name: Binary RPM
-          # Directory containing files to upload
-          path: ${{ steps.rpm.outputs.rpm_dir_path }}
+    - name: Mirror the Github organization repos to Gitee.
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: github/qiaofeng1227
+        dst: gitee/qiaofeng1227
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token: ${{ secrets.GITEE_TOKEN }}
+        account_type: org
